@@ -1,1 +1,22 @@
-<p>home-page works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <!-- Custom Directive -->
+      <div>
+        <p appDefaultTheme>home-page works!</p>
+      </div>
+      <!-- toggle the "special" class on/off with a property -->
+      <div class="my-3">
+        <button (click)="onClick()" type="button" class="btn btn-danger">Click</button>
+      </div>
+      <div>
+        <p [ngClass]="!isClick ? 'btn-primary btn' : 'btn-danger btn'" class=""> Lorem ipsum dolor sit amet consectetur </p>
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+</div>

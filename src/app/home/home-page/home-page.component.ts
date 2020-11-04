@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
+
+  isClick: boolean;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  onClick() {
+    this.isClick =!this.isClick;
+    console.log(this.isClick, "Clicked")
+  }
+
 
 }
