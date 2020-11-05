@@ -10,7 +10,7 @@
         <button (click)="onClick()" type="button" class="btn btn-danger">Click</button>
       </div>
       <div>
-        <p [ngClass]="!isClick ? 'btn-primary btn' : 'btn-danger btn'" class=""> Lorem ipsum dolor sit amet consectetur </p>
+        <p [ngClass]="isClick ? 'btn-primary btn' : 'btn-danger btn'" class=""> Lorem ipsum dolor sit amet consectetur </p>
       </div>
 
 

@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomePageComponent implements OnInit {
 
 
-  isClick: boolean;
+  isClick:boolean =true;
 
   constructor() { }
 
@@ -16,7 +16,7 @@ export class HomePageComponent implements OnInit {
   }
 
   onClick() {
-    this.isClick =!this.isClick;
+    this.isClick = !this.isClick;
     console.log(this.isClick, "Clicked")
   }
 
