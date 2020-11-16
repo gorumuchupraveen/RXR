@@ -10,12 +10,22 @@
         <button (click)="onClick()" type="button" class="btn btn-danger">Click</button>
       </div>
       <div>
-        <p [ngClass]="isClick ? 'btn-primary btn' : 'btn-danger btn'" class=""> Lorem ipsum dolor sit amet consectetur </p>
+        <p [ngClass]="isClick ? 'btn-primary btn' : 'btn-danger btn'" class=""> Lorem ipsum dolor sit amet consectetur
+        </p>
       </div>
 
 
+      <div [ngStyle]="currentStyles" (click)="setCurrentStyles()">
+        This div is initially italic, normal weight, and extra large (24px).
+      </div>
+      <label for="example-ngModel">[(ngModel)]:</label>
+      <input [(ngModel)]="currentItem_name" id="example-ngModel">
+      <p> {{currentItem_name}} </p>
 
-
+      <label for="example-change">(ngModelChange)="...name=$event":</label>
+      <input [ngModel]="currentItem_name1" (ngModelChange)="currentItem_name1=$event" id="example-change">
+      <p> {{currentItem_name1}} </p>
+      
 
     </div>
   </div>

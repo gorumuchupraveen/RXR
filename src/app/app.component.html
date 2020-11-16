@@ -1,1 +1,28 @@
-<router-outlet></router-outlet>
+<div class="container-fluid p-0">
+  <header class="header py-1">
+    <nav class="d-flex">
+      <div class="navbar-brnad pl-3">
+        <h1 class="m-0">Walgreens RXR</h1>
+      </div>
+      <ul class="list-unstyled my-0 ml-auto align-items-center d-flex mr-5">
+        <li><a [routerLink]="['/home/component1']">Component
+            1</a></li>
+        <li><a [routerLink]="['/home/component2']">Component 2</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <router-outlet></router-outlet>
+
+
+  <footer class="footer py-2">
+    <div class="d-flex justify-content-center">
+      <h2 class=""> Walgreens RXR</h2>
+    </div>
+    <ul class=" list-unstyled d-flex justify-content-center m-0">
+      <li><a [routerLink]="['/home/component1']">Component 1</a></li>
+      <li><a [routerLink]="['/home/component2']">Component 2</a></li>
+    </ul>
+  </footer>
+</div>
