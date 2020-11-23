@@ -36,8 +36,9 @@ a {
         }
     }
 }
-.table-bordered{
-    margin-bottom: 6rem;
+
+.table-bordered {
+    margin: 1rem 0 6rem 0;
 
 }
 
@@ -63,4 +64,16 @@ footer {
         }
     }
 
+}
+
+table {
+    tbody {
+        .close {
+            font-size: 24px;
+            color: red;
+            font-weight: 700;
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
 }

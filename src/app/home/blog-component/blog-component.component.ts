@@ -9,20 +9,16 @@ export class BlogComponentComponent implements OnInit {
 
   addRows: string = '';
   tableInput = [];
+  isClicked: false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
-
-
-  tableData(addRows) {
-    this.tableInput.push(this.addRows)
-    console.log(this.tableInput)
-    console.log(this.addRows, "sdvsfbfdbfd")
+  
+  tableData() {
+    this.tableInput.push(this.addRows);
+    console.log(this.addRows);
+    this.addRows = "";
   }
-
-
-
 }
