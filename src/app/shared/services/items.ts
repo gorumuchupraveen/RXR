@@ -1,0 +1,18 @@
+export class Item {
+
+    static items: Item[] = [
+        new Item(null, 'Teapot', 'stout'),
+        new Item(1, 'Lamp', 'bright'),
+        new Item(2, 'Phone', 'slim'),
+        new Item(3, 'Television', 'vintage'),
+        new Item(4, 'Fishbowl')
+    ];
+
+    constructor(
+        public id?: number,
+        public name?: string,
+        public feature?: string,
+        public url?: string,
+        public rate = 100,
+    ) { }
+}

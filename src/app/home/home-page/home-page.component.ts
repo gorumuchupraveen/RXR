@@ -13,7 +13,7 @@ export class HomePageComponent implements OnInit {
   isUnchanged: boolean;
   isSpecial: boolean;
   currentStyles = {};
-  currentItem_name = " ";
+  currentItem_name = "";
   currentItem_name1 = "";
   inputForms = {};
 
@@ -49,5 +49,7 @@ export class HomePageComponent implements OnInit {
     }
 
   }
+
+
 
 }

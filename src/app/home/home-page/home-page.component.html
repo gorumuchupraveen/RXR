@@ -19,13 +19,21 @@
         This div is initially italic, normal weight, and extra large (24px).
       </div>
       <label for="example-ngModel">[(ngModel)]:</label>
-      <input [(ngModel)]="currentItem_name" id="example-ngModel">
+      <input [(ngModel)]="currentItem_name">
       <p> {{currentItem_name}} </p>
 
       <label for="example-change">(ngModelChange)="...name=$event":</label>
-      <input [ngModel]="currentItem_name1" (ngModelChange)="currentItem_name1=$event" id="example-change">
+      <input [(ngModel)]="currentItem_name1" (ngModelChange)="currentItem_name1=$event">
       <p> {{currentItem_name1}} </p>
-      
+
+      <h1>Ng Switchcase</h1>
+      <div>
+        <ul class="list-unstyled" *ngFor="let itemName of items">
+          <li><input type="radio" name="itemName"> {{itemName.name}} </li>
+        </ul>
+      </div>
+
+
 
     </div>
   </div>

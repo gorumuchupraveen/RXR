@@ -15,7 +15,7 @@ import { BlogComponentComponent } from './blog-component/blog-component.componen
   imports: [
     CommonModule,
     HomeRoutingModule,
-    FormsModule,
+    FormsModule
   ]
 })
 export class HomeModule { }

@@ -8,7 +8,9 @@ import { EmployeeService } from '../../shared/services/employee.service';
 })
 export class AboutComponentComponent implements OnInit {
 
-  public employees = []
+  public employees = [];
+
+
 
   constructor(private employeeDet: EmployeeService) { }
 
@@ -16,5 +18,6 @@ export class AboutComponentComponent implements OnInit {
     this.employeeDet.getEmployess()
       .subscribe(employeeData => this.employees = employeeData);
   }
+
 
 }
